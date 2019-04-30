@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}
+    {{ .Site.Title }}
+    {{ end }}</title>
+</head>
+
+<body>
+  {{ partialCached "header.html" . }}
+  <div style="width:100%; border: solid green 2px;">
+    <h1>body</h1>
+    {{ block "main" . }}
+    {{ end }}
+  </div>
+  {{ partialCached "footer.html" . }}
+</body>
+
+</html>
