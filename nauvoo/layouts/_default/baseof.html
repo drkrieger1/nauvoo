@@ -13,7 +13,6 @@
 <body>
   {{ partialCached "header.html" . }}
   <div style="width:100%; border: solid green 2px;">
-    <h1>body</h1>
     {{ block "main" . }}
     {{ end }}
   </div>
